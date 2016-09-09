@@ -10,6 +10,11 @@ $(document).ready(function(){
       setTimeout(function(){
             $('.logo-box__logo').addClass('is-visible');
       },500);
+      if(!Modernizr.svg){
+            $('.logo-box__logo img').attr({
+            'src':'images/logo.png'
+            });            
+      }
 
 });
 /*$(function(){

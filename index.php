@@ -11,6 +11,7 @@ include "modules/form.php";
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="css/mystyle.css">
     <script type="text/javascript" src="script/jquery.js"></script>
+    <script type="text/javascript" src="script/modernizr.js"></script>
     <link rel="icon" href="images/favicon.ico" type="image/x-icon">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">

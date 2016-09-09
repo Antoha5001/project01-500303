@@ -79,10 +79,10 @@ a {
 
 .logo-box {
 /*	margin: 30px auto;
-	@media (min-width: 830px) {
+	@media (min-width: $planshet) {
 		margin: 0 auto;
 	}
-	@media (max-width: 830px) and (min-width: 580px) {
+	@media (max-width: $planshet) and (min-width: 580px) {
 		margin: 30px auto;
 	}
 	@media (max-width: 380px) {
@@ -111,6 +111,19 @@ a {
 		width: calc(100% - 40px);
 		height: auto;
 		margin:40px auto;
+	}
+	@media (max-width: $phone) {
+		width: calc(100% - 20px);
+		height: 300px;
+		background:{
+			image:url('../images/logo_vert.svg');
+			position: top center;
+			repeat:no-repeat;
+		}
+		margin:40px auto;
+		img{
+			display: none;
+		}
 	}
 }
 
@@ -185,16 +198,16 @@ a {
 	display: flex;
 	flex-direction: column;
 	margin: 40px 0 0;
-	@media (min-width: 830px) {
+	@media (min-width: $planshet) {
 		display: flex;
 		margin: 60px 0 0;
 		min-height: 160px;
 		align-items: center;
 		justify-content: center;
 	}
-	@media (max-width: 830px) and (min-width: 580px) {
+	@media (max-width: $planshet) and (min-width: 580px) {
 		display: flex;
-		margin: 100px 0 0;
+		margin: 40px 0 0;
 		min-height: 160px;
 		align-items: center;
 		justify-content: center;
@@ -217,10 +230,10 @@ a {
 
 .price-box__price {
 	@include price(300px, 120px, 'price-s.png');
-	@media (min-width: 830px) {
+	@media (min-width: $planshet) {
 		 @include price(550px, 220px, 'price.png');
 	}
-	@media (max-width: 830px) and (min-width: 580px) {
+	@media (max-width: $planshet) and (min-width: 580px) {
 		 @include price(470px, 188px, 'price-planshet.png');
 	}
 	@media (max-width: 380px) {
