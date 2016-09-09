@@ -1,3 +1,4 @@
+@import "library";
 	@import url(reset.css);
 	@import url(http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,700&subset=cyrillic);
 	@font-face {
@@ -6,100 +7,20 @@
 		font-weight: 400;
 		font-style: normal;
 	}
-	
+
 	* {
 		border: 0;
 	}
-	
-	$green:#60c48f;
-	$dark-green:#397556;
-	$lite-green: #e8fff3;
-	/*#e8fff3 #ecf8f2*/
-	
-	$nice-green: #ccffe4;
-	/*#e8fff3 #ecf8f2*/
-	
-	$lite-blue: #2bd9f5;
-	/*#e8fff3 #ecf8f2*/
-	
-	$blue: #38baf2;
-	/*#e8fff3 #ecf8f2*/
-	
-	$image_dir:'../images/';
-	$planshet: 910px;
-	/**/
-	
-	$phone: 600px;
-	$blue2: #00478a;
-	$bluet: rgba(37, 35, 72, 0.65);
-	$lite-blue2: #0080ff;
-	$nice-blue2: #b0d9ff;
-	$lite-bluet: rgba(83, 77, 177, 0.85);
-	$orange: #FFD608;
-	$dorange111: orange - #111;
-	$dorange333: orange - #333;
-	$green2: #00ba78;
-	$dark-green2: #005c3a;
-	$lite-green2: #00cc84;
-	$W250: 250px;
-	/**/
-	
-	@mixin border-radius($px) {
-		-webkit-border-radius: $px;
-		-moz-border-radius: $px;
-		border-radius: $px;
-	}
-	
-	@mixin conteiner($background) {
-		margin: 0 auto;
-		position: relative;
-		background: url($image_dir+$background) #fff no-repeat;
-		box-shadow: 0 0 15px #999;
-		-webkit-box-shadow: 0 0 15px #999;
-		width: 90%;
-		-moz-box-shadow: 0 0 15px #999;
-		width: 90%;
-	}
-	
-	@mixin logo($width, $height, $background) {
-		width: $width;
-		height: $height;
-		background: url($image_dir+$background) no-repeat top center;
-		margin: auto;
-	}
-	
-	@mixin price($width, $height, $background) {
-		width: $width;
-		height: $height;
-		background: url($image_dir+$background) no-repeat;
-		margin: auto;
-	}
-	
-	@mixin tsize($fsize, $color, $lh) {
-		font-size: $fsize;
-		color: $color;
-		line-height: $lh;
-	}
-	
-	@mixin footer($background) {
-		height: 40px;
-		background: url($image_dir+$background) repeat-x;
-		overflow: hidden;
-	}
-	
-	@mixin bradius($atr1) {
-		border-radius: $atr1;
-		-webkit-border-radius: $atr1;
-		-moz-border-radius: $atr1;
-	}
+
+
 	/*FLUID*/
-	
+
 	.cols {
 		float: left;
 		padding: 0 1em;
 		text-align: center;
 	}
-	
+
 	.col1,
 	.col2,
 	.col3,
@@ -114,7 +35,7 @@
 	.col12 {
 		width: 100%;
 	}
-	
+
 	.conteiner:before,
 	.conteiner:after,
 	.row:before,
@@ -124,13 +45,13 @@
 		content: " ";
 		display: table;
 	}
-	
+
 	.conteiner:after,
 	.row:after,
 	.clear:after {
 		clear: both;
 	}
-	
+
 	* {
 		margin: 0;
 		padding: 0;
@@ -138,41 +59,41 @@
 		-webkit-box-sizing: border-box;
 		-moz-box-sizing: border-box;
 	}
-	
+
 	html,
 	body {
 		background: #eefaff;
 		height: 100%;
 		font: 100%/1.5em 'Open Sans', sans-serif;
 	}
-	
+
 	a {
 		text-decoration: none;
 	}
-	
+
 	.globalwidth {}
-	
+
 	.s-conteiner {
 		@include conteiner('menu-s.png');
 	}
-	
+
 	.logo-box {
 			margin: 30px auto;
 		@media (min-width: 830px) {
-			
+
 			margin: 0 auto;
 		}
 		@media (max-width: 830px) and (min-width: 580px) {
 			margin: 30px auto;
 		}
-		@media (max-width: 380px) {				
+		@media (max-width: 380px) {
 			margin: 25px 0;
 		}
-		@media (max-width: 250px) {	
+		@media (max-width: 250px) {
 			margin: 20px 0;
 		}
 	}
-	
+
 	.logo-box__logo {
 		@include logo(100%, 97px, 'logo100_310-s.png');
 		@media (min-width: 830px) {
@@ -180,43 +101,43 @@
 			float: left;
 			position: relative;
 			left: 40px;
-			top: 27px;			
+			top: 27px;
 		}
-		@media (max-width: 380px) {	
-			@include logo(100%, 200px, 'logo200.png');
+		@media (max-width: 380px) {
+			@include logo(auto, 230px, 'logo_vert.svg');
 		}
-		@media (max-width: 250px) {		
-			@include logo(100%, 180px, 'logo200-s.png');
+		@media (max-width: 250px) {
+		//	@include logo(100%, 180px, 'logo200-s.png');
 		}
 	}
-	
+
 	.phone-top {}
-	
+
 	.phone-top__kod-goroda {
 		font-size: 1em;
 		font-weight: bold;
 		color: $green;
 	}
-	
+
 	.phone-top__number {
 		position: relative;
 		font-size: 1.5em;
 		color: $green;
 		top: 1px;
 	}
-	
+
 	.phone-top__adres {
 		font-size: 1em;
 		font-weight: bold;
 		color: $green;
 	}
-	
+
 	.phone-top__adres_relative {}
-	
+
 	.phone-top__adres_big {
 		font-size: 18px;
 	}
-	
+
 	.slogan-box {
 			display: flex;
 		flex-direction: column;
@@ -239,19 +160,19 @@
 			margin: 15px 0 0;
 		}
 	}
-	
-	
-	
+
+
+
 	.price-box {
 		margin: 30px auto;
-		@media (min-width: 830px) {			
+		@media (min-width: 830px) {
 			margin: 60px auto 90px;
 		}
 		@media (max-width: 830px) and (min-width: 580px) {
 			margin: 30px 0;
 		}
 	}
-	
+
 	.price-box__price {
 		@include price(300px, 120px, 'price-s.png');
 		@media (min-width: 830px) {
@@ -260,13 +181,13 @@
 		@media (max-width: 830px) and (min-width: 580px) {
 			@include price(470px, 188px, 'price-planshet.png');
 		}
-		@media (max-width: 380px) {		
+		@media (max-width: 380px) {
 			@include price(270px, 108px, 'price-ss.png');
 		}
-		@media (max-width: 321px) {		
+		@media (max-width: 321px) {
 			@include price(240px, 96px, 'price-250.png');
 		}
-		@media (max-width: 250px) {		
+		@media (max-width: 250px) {
 			@include price(170px, 68px, 'price-vs.png');
 		}
 	}
@@ -303,52 +224,52 @@
 		font-weight: bold;
 	}*/
 	/*CONTACTS*/
-	
+
 	.contacts-box {
 		background: $lite-green;
 		overflow: hidden;
 		margin-top: 0px;
 	}
-	
+
 	.contacts-box__contacts {
 		height: 350px;
 	}
-	
+
 	.contacts-box__zagolovok {
 		@include tsize(25px, $green, 1.5em);
 		padding-top: 15px;
 		font-weight: bold;
 	}
-	
+
 	.contacts-box__podzagolovok {
 		font-size: 15px;
 		line-height: 1.5em;
 	}
-	
+
 	.contacts-box__podzagolovok_bold {
 		font-weight: bold;
 		padding-top: 15px;
 	}
-	
+
 	.contacts-box__maps {
 		height: 400px;
 		padding: 0;
 		margin: 0;
 	}
-	
+
 	#map {
 		width: 100%;
 		height: 500px;
 		background: #ccc;
 	}
-	
+
 	.s-footer {
 		@include footer('footer.png');
 		display: flex;
 		align-items: center;
 		justify-content: center;
 	}
-	
+
 	.s-footer__license {
 		padding-left: 0px;
 		font-size: 0.7em;
@@ -356,7 +277,7 @@
 		font-weight: bold;
 		text-align: center;
 	}
-	
+
 	@media screen and (min-width: 830px) {
 		/*FLUID*/
 		.cols {
@@ -477,11 +398,11 @@
 			color: #fff;
 		}
 	}
-	
+
 	@media screen and (max-width: 830px) and (min-width: 580px) {
 		.s-conteiner {
 			@include conteiner('menu.png');
-		}		
+		}
 		.phone-top {
 			line-height: 1.8em;
 		}
@@ -506,7 +427,7 @@
 			font-size: 1.2em;
 		}
 	}
-		
+
 	@media screen and (max-width: 250px) {
 		.phone-top__kod-goroda {
 			@include tsize(0.9em, $green, 1.2em);
@@ -523,7 +444,7 @@
 		}
 	}
 	/*forms*/
-	
+
 	.form-box {
 		display: block;
 		background: $nice-blue2;
@@ -536,13 +457,13 @@
 			padding: 20px;
 		}
 	}
-	
+
 	.form-box__top {
 		background: $blue2;
 		width: 100%;
 		height: 40px;
 	}
-	
+
 	.form-box__zagolovok {
 		display: block;
 		text-align: center;
@@ -554,7 +475,7 @@
 		font-weight: 800;
 		@media (max-width: $planshet) {}
 	}
-	
+
 	.form-box__podzagolovok {
 		display: block;
 		text-align: center;
@@ -567,7 +488,7 @@
 		font-weight: 400;
 		@media (max-width: $planshet) {}
 	}
-	
+
 	.form-box__form {
 		display: block;
 		padding: 20px 40px;
@@ -582,7 +503,7 @@
 			padding: 20px;
 		}
 	}
-	
+
 	.form-box__submit {
 		background: $green2;
 		border-bottom: 3px solid $dark-green2;
@@ -596,11 +517,11 @@
 		font-size: 18px;
 		@media (max-width: $planshet) {}
 	}
-	
+
 	.form-box__submit:hover {
 		background: $lite-green2;
 	}
-	
+
 	.form-box__input {
 		display: block;
 		padding: 5px;
@@ -609,11 +530,11 @@
 		height: 30px;
 		@media (max-width: $planshet) {}
 	}
-	
+
 	.form-box__input {
 		border-top: 3px solid #ccc;
 	}
-	
+
 	.form-box__input-name {
 		display: block;
 		padding: 2px 0;
@@ -652,13 +573,13 @@
 			font-family: nautilys;
 			@include tsize(3em, $green, 1.5em);
 		}
-		@media (max-width: 380px) {		
+		@media (max-width: 380px) {
 			font-family: nautilys;
 			@include tsize(2.0em, $green, 1.5em);
 		}
-		@media (max-width: 250px) {			
+		@media (max-width: 250px) {
 			@include tsize(1.4em, $green, 1.2em);
 			font-family: nautilys;
 		}
-		
+
 	}

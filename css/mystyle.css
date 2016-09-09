@@ -1,3 +1,9 @@
+/*#e8fff3 #ecf8f2*/
+/*#e8fff3 #ecf8f2*/
+/*#e8fff3 #ecf8f2*/
+/*#e8fff3 #ecf8f2*/
+/**/
+/**/
 @import url(reset.css);
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,700&subset=cyrillic);
 @font-face {
@@ -8,12 +14,6 @@
 * {
   border: 0; }
 
-/*#e8fff3 #ecf8f2*/
-/*#e8fff3 #ecf8f2*/
-/*#e8fff3 #ecf8f2*/
-/*#e8fff3 #ecf8f2*/
-/**/
-/**/
 /*FLUID*/
 .cols {
   float: left;
@@ -106,15 +106,9 @@ a {
       top: 27px; } }
   @media (max-width: 380px) {
     .logo-box__logo {
-      width: 100%;
-      height: 200px;
-      background: url("../images/logo200.png") no-repeat top center;
-      margin: auto; } }
-  @media (max-width: 250px) {
-    .logo-box__logo {
-      width: 100%;
-      height: 180px;
-      background: url("../images/logo200-s.png") no-repeat top center;
+      width: auto;
+      height: 230px;
+      background: url("../images/logo_vert.svg") no-repeat top center;
       margin: auto; } }
 
 .phone-top__kod-goroda {
