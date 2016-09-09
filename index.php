@@ -43,7 +43,7 @@ include "modules/form.php";
                     <p class="phone-top__kod-goroda">+7 (3852) <span class="phone-top__kod-goroda phone-top__number">50-03-03</span>
 					    </p>
 					    <p class="phone-top__adres phone-top__adres_relative">
-					    г. Барнаул, ул.&nbsp;Партизанская, 169</p>
+					    г. Барнаул, ул.&nbsp;Партизанская,&nbsp;169</p>
                 </div>
             </div>
 	    </div>
