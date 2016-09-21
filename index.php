@@ -2,7 +2,7 @@
 include "modules/form.php";
 ?>
 <!Doctype html>
-<html>
+<html lang="ru">
 <head>
     <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
     <meta name="keywords" content=""/>
@@ -10,16 +10,16 @@ include "modules/form.php";
     <meta name="author" content=""/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="css/mystyle.css">
-    <script type="text/javascript" src="script/jquery.js"></script>
-    <script type="text/javascript" src="script/modernizr.js"></script>
+    <script async type="text/javascript" src="script/jquery.js"></script>
+    <script async type="text/javascript" src="script/modernizr.js"></script>
     <link rel="icon" href="images/favicon.ico" type="image/x-icon">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
     <title>МЦ «ЖИЗНЬ»</title>
-    <script src="http://maps.api.2gis.ru/2.0/loader.js?pkg=full"></script>
-    <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
-    <script src="script/2gis.js"></script>
-    <script src="script/myscript.js"></script>
+    <script async src="http://maps.api.2gis.ru/2.0/loader.js?pkg=full"></script>
+    <script async src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+    <script async src="script/2gis.js"></script>
+    <script async src="script/myscript.js"></script>
     <script>window.jQuery || document.write('<script src="script/jquery.js"><\/script>')</script>
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -51,8 +51,8 @@ include "modules/form.php";
 	        <div class="cols col12 slogan-box">
 	        <h2 class="pardon__title">Приносим свои извинения!</h2><br>
 <p class="pardon__paragraf">В связи с реконструкцией сайта
-не вся информация актуальна.</br>
-	По любому вопросу можно звонить по телефону 50-03-03.</br> Ответим на email:<a class="link" href="mailto:info@500303.ru"> info@500303.ru</a>  </p> </br>
+не вся информация актуальна.<br/>
+	По любому вопросу можно звонить по телефону 50-03-03.<br/> Ответим на email:<a class="link" href="mailto:info@500303.ru"> info@500303.ru</a>  </p> <br/>
                 <h1 class="slogan-box__slogan">Ваш верный шаг <br>к здоровой жизни!</h1>
 	        </div>
 	        <div class="cols col12 price-box">
