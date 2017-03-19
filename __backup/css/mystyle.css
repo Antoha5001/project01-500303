@@ -300,16 +300,6 @@ a {
   font-weight: bold;
   padding-top: 15px; }
 
-.contacts-box__social-icons {
-  width: 30px;
-  height: 30px;
-  background: none;
-  margin-top: 1.5em;
-  margin-left: 40px;
-  transition: all 0.3s; }
-  .contacts-box__social-icons:hover {
-    transform: scale(1.2); }
-
 .contacts-box__maps {
   height: 400px;
   padding: 0;
@@ -605,5 +595,3 @@ a {
 
 .is-visible {
   opacity: 1; }
-
-/*# sourceMappingURL=mystyle.css.map */

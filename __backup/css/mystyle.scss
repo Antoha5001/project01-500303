@@ -304,23 +304,6 @@ a {
 	font-weight: bold;
 	padding-top: 15px;
 }
-.contacts-box__social-icons {
-	width: 30px;
-	height: 30px;
-	background: none;
-	margin-top: 1.5em;
-	margin-left: 40px;
-	transition: all 0.3s;
-	a img{
-		//box-shadow: 0 0px 5px 0 rgba(0, 0, 0, 0.4);
-	}
-	a img:hover{
-		//box-shadow: 0 2px 15px 0 rgba(0, 0, 0, 0.4);
-	}
-	&:hover{
-		transform: scale(1.2);
-	}
-}
 
 .contacts-box__maps {
 	height: 400px;

@@ -85,9 +85,6 @@ include "modules/form.php";
                         <p class = "contacts-box__podzagolovok">                        +7 (3852) 50-03-03</p>
                         <p class = "contacts-box__podzagolovok contacts-box__podzagolovok_bold">                        Почта:</p>
                         <p class = "contacts-box__podzagolovok">                        e-mail: <a href="mailto:info@500303.ru" class="link">info@500303.ru</a></p>
-                        <div class="contacts-box__social-icons">
-                          <a href="https://vk.com/club131352162" target="_blank"><img src="images/vk.svg" alt=""></a>
-                        </div>
 				    </div>
 				    <div class="cols col8 contacts-box__maps">
                         <div id="map"></div>
