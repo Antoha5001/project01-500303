@@ -283,7 +283,7 @@ a {
   margin-top: 0; }
 
 .contacts-box__contacts {
-  height: 350px; }
+  min-height: 350px; }
 
 .contacts-box__zagolovok {
   font-size: 25px;
@@ -309,6 +309,13 @@ a {
   transition: all 0.3s; }
   .contacts-box__social-icons:hover {
     transform: scale(1.2); }
+  @media (max-width: 910px) {
+    .contacts-box__social-icons {
+      margin: auto;
+      margin-top: 1em;
+      margin-bottom: 1em;
+      width: 50px;
+      height: 50px; } }
 
 .contacts-box__maps {
   height: 400px;
