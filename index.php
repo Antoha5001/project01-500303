@@ -11,15 +11,15 @@ include "modules/form.php";
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="css/mystyle.css">
     <script async type="text/javascript" src="script/jquery.js"></script>
+    <script async src="script/myscript.js"></script>
     <script async type="text/javascript" src="script/modernizr.js"></script>
-    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="images/favicon.png" type="image/x-icon">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
     <title>МЦ «ЖИЗНЬ»</title>
-    <script async src="http://maps.api.2gis.ru/2.0/loader.js?pkg=full"></script>
+    <script async src="https://maps.api.2gis.ru/2.0/loader.js?pkg=full"></script>
     <script async src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
     <script async src="script/2gis.js"></script>
-    <script async src="script/myscript.js"></script>
     <script>window.jQuery || document.write('<script src="script/jquery.js"><\/script>')</script>
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -49,14 +49,18 @@ include "modules/form.php";
 	    </div>
 	    <div class="row">
 	        <div class="cols col12 slogan-box">
-	        <h2 class="pardon__title">Приносим свои извинения!</h2><br>
-<p class="pardon__paragraf">В связи с реконструкцией сайта
-не вся информация актуальна.<br/>
-	По любому вопросу можно звонить по телефону 50-03-03.<br/> Ответим на email:<a class="link" href="mailto:info@500303.ru"> info@500303.ru</a>  </p> <br/>
                 <h1 class="slogan-box__slogan">Ваш верный шаг <br>к здоровой жизни!</h1>
 	        </div>
 	        <div class="cols col12 price-box">
                 <div class="price-box__price"></div>
+	        </div>
+          <div class="cols col12 slogan-box">
+	            <h2 class="pardon__title">Приносим свои извинения!</h2><br>
+            <p class="pardon__paragraf">В связи с реконструкцией сайта
+            не вся информация актуальна.<br/>
+            По любому вопросу можно звонить по телефону 50-03-03.<br/>
+            Ответим на email:<a class="link" href="mailto:info@500303.ru"> info@500303.ru</a>
+            </p> <br/>
 	        </div>
 	    </div>
 	    <div class="row">

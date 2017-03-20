@@ -5,7 +5,7 @@
 /**/
 /**/
 @import url(reset.css);
-@import url(http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,700&subset=cyrillic);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400italic,400,700&subset=cyrillic);
 @font-face {
   font-family: nautilys;
   src: url("../fonts/nautiluspompilius.ttf");
@@ -126,56 +126,98 @@ a {
       .logo-box__logo img {
         display: none; } }
 
-.phone-top__kod-goroda {
-  font-size: 1em;
-  font-weight: bold;
-  color: #60c48f; }
-.phone-top__number {
-  position: relative;
-  font-size: 1.5em;
-  color: #60c48f;
-  top: 1px; }
-.phone-top__adres {
-  font-size: 1em;
-  font-weight: bold;
-  color: #60c48f; }
-.phone-top__adres_big {
-  font-size: 18px; }
+/* Contacts in header */
+@media (min-width: 910px) {
+  .phone-top {
+    display: flex;
+    flex-direction: column;
+    height: 75px;
+    width: 400px;
+    position: relative;
+    top: 40px;
+    right: 40px;
+    text-align: right;
+    float: right; } }
 @media (max-width: 910px) and (min-width: 580px) {
   .phone-top {
-    line-height: 1.8em; }
+    line-height: 1.8em; } }
+
+.phone-top__adres_big {
+  font-size: 18px; }
+  @media (max-width: 910px) and (min-width: 580px) {
+    .phone-top__adres_big {
+      font-size: 1.2em; } }
+
+.phone-top__adres {
+  font-size: 20px;
+  font-weight: bold;
+  color: #60c48f; }
+  @media (max-width: 910px) {
+    .phone-top__adres {
+      color: #60c48f;
+      font-weight: bold; } }
+  @media (max-width: 910px) and (min-width: 580px) {
+    .phone-top__adres {
+      font-size: 1.2em;
+      color: #60c48f; } }
+  @media (max-width: 250px) {
+    .phone-top__adres {
+      font-size: 0.9em;
+      color: #60c48f;
+      line-height: 1.2em; } }
+
+.phone-top__adres_relative {
+  margin-top: 15px;
+  position: relative;
+  top: 4px;
+  color: #00bbff; }
+
+.phone-top__kod-goroda {
+  position: relative;
+  font-size: 1em;
+  font-weight: bold;
+  top: 5px;
+  color: #60c48f; }
+  @media (max-width: 910px) {
+    .phone-top__kod-goroda {
+      font-size: 25px;
+      color: #60c48f;
+      font-weight: bold; } }
+  @media (max-width: 910px) and (min-width: 580px) {
     .phone-top__kod-goroda {
       font-size: 1.4em;
       font-weight: bold;
-      color: #60c48f; }
+      color: #60c48f; } }
+  @media (max-width: 250px) {
+    .phone-top__kod-goroda {
+      font-size: 0.9em;
+      color: #60c48f;
+      line-height: 1.2em;
+      font-weight: bold; } }
+
+.phone-top__number {
+  position: relative;
+  font-size: 40px;
+  color: #60c48f;
+  top: 2px; }
+  @media (max-width: 910px) {
+    .phone-top__number {
+      position: relative;
+      color: #60c48f;
+      top: 2px; } }
+  @media (max-width: 910px) and (min-width: 580px) {
     .phone-top__number {
       position: relative;
       font-size: 1.9em;
       color: #60c48f;
-      top: 1px; }
-    .phone-top__adres {
+      top: 1px; } }
+  @media (max-width: 250px) {
+    .phone-top__number {
       font-size: 1.2em;
-      font-weight: bold;
-      color: #60c48f; }
-    .phone-top__adres_big {
-      font-size: 1.2em; } }
-@media (max-width: 250px) {
-  .phone-top__adres {
-    font-size: 0.9em;
-    color: #60c48f;
-    line-height: 1.2em;
-    font-weight: bold; }
-  .phone-top__number {
-    font-size: 1.2em;
-    color: #60c48f;
-    line-height: 1.2em;
-    position: relative;
-    top: 1px; }
-  .phone-top__kod-goroda {
-    font-size: 0.9em;
-    color: #60c48f;
-    line-height: 1.2em;
-    font-weight: bold; } }
+      color: #60c48f;
+      line-height: 1.2em;
+      position: relative;
+      top: 1px; } }
 
 .slogan-box {
   display: flex;
@@ -199,14 +241,46 @@ a {
     .slogan-box {
       margin: 15px 0 0; } }
 
+.slogan-box__slogan {
+  display: block;
+  font-family: nautilys;
+  font-size: 2.5em;
+  color: #60c48f;
+  line-height: 1.5em; }
+  @media (min-width: 910px) {
+    .slogan-box__slogan {
+      font-family: nautilys;
+      font-size: 3em;
+      color: #60c48f;
+      line-height: 1.5em;
+      width: 100%; } }
+  @media (max-width: 910px) and (min-width: 580px) {
+    .slogan-box__slogan {
+      font-family: nautilys;
+      font-size: 3em;
+      color: #60c48f;
+      line-height: 1.5em; } }
+  @media (max-width: 380px) {
+    .slogan-box__slogan {
+      font-family: nautilys;
+      font-size: 2em;
+      color: #60c48f;
+      line-height: 1.5em; } }
+  @media (max-width: 250px) {
+    .slogan-box__slogan {
+      font-size: 1.4em;
+      color: #60c48f;
+      line-height: 1.2em;
+      font-family: nautilys; } }
+
 .price-box {
-  margin: 30px auto; }
+  margin: 30px auto 0; }
   @media (min-width: 910px) {
     .price-box {
-      margin: 60px auto 90px; } }
+      margin: 60px auto 0px; } }
   @media (max-width: 910px) and (min-width: 580px) {
     .price-box {
-      margin: 30px 0; } }
+      margin: 30px 0 0; } }
 
 .price-box__price {
   width: 300px;
@@ -327,6 +401,7 @@ a {
   height: 500px;
   background: #ccc; }
 
+/* FOOTER */
 .s-footer {
   height: 40px;
   background: url("../images/footer.png") repeat-x;
@@ -396,42 +471,6 @@ a {
     -moz-box-shadow: 0 0 15px #999;
     width: 90%; }
 
-  .phone-top {
-    display: flex;
-    flex-direction: column;
-    height: 75px;
-    width: 400px;
-    position: relative;
-    top: 40px;
-    right: 40px;
-    text-align: right;
-    float: right; }
-
-  .phone-top__kod-goroda {
-    position: relative;
-    font-size: 25px;
-    color: #60c48f;
-    font-weight: bold;
-    top: 3px; }
-
-  .phone-top__number {
-    position: relative;
-    font-size: 40px;
-    color: #60c48f;
-    top: 2px; }
-
-  .phone-top__adres {
-    font-size: 15px;
-    color: #60c48f;
-    font-weight: bold; }
-
-  .phone-top__adres_relative {
-    position: relative;
-    top: 4px; }
-
-  .phone-top__adres_big {
-    font-size: 18px; }
-
   .contacts-box {
     height: 400px;
     background: #e8fff3; }
@@ -441,6 +480,7 @@ a {
     color: #60c48f;
     line-height: 1.5em;
     margin-left: 40px;
+    margin-bottom: 1em;
     padding-top: 15px;
     font-weight: bold;
     text-align: left; }
@@ -578,39 +618,5 @@ a {
 .link:hover {
   color: #0080ff; }
 
-.slogan-box__slogan {
-  display: block;
-  font-family: nautilys;
-  font-size: 2.5em;
-  color: #60c48f;
-  line-height: 1.5em; }
-  @media (min-width: 910px) {
-    .slogan-box__slogan {
-      font-family: nautilys;
-      font-size: 3em;
-      color: #60c48f;
-      line-height: 1.5em;
-      width: 100%; } }
-  @media (max-width: 910px) and (min-width: 580px) {
-    .slogan-box__slogan {
-      font-family: nautilys;
-      font-size: 3em;
-      color: #60c48f;
-      line-height: 1.5em; } }
-  @media (max-width: 380px) {
-    .slogan-box__slogan {
-      font-family: nautilys;
-      font-size: 2em;
-      color: #60c48f;
-      line-height: 1.5em; } }
-  @media (max-width: 250px) {
-    .slogan-box__slogan {
-      font-size: 1.4em;
-      color: #60c48f;
-      line-height: 1.2em;
-      font-family: nautilys; } }
-
 .is-visible {
   opacity: 1; }
-
-/*# sourceMappingURL=mystyle.css.map */

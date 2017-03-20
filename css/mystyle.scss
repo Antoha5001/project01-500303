@@ -1,6 +1,6 @@
 @import "library";
 @import url(reset.css);
-@import url(http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,700&subset=cyrillic);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400italic,400,700&subset=cyrillic);
 @font-face {
 	font-family: nautilys;
 	src: url("../fonts/nautiluspompilius.ttf");
@@ -93,7 +93,7 @@ a {
 	}*/
 }
 
-
+//Logotype
 .logo-box__logo {
 	opacity: 0;
 	transition: opacity 1.5s;
@@ -127,73 +127,106 @@ a {
 	}
 }
 
+/* Contacts in header */
 .phone-top {
-	&__kod-goroda {
-		font-size: 1em;
-		font-weight: bold;
-		color: $green;
-	}
-
-	&__number {
+	@media (min-width: $planshet) {
+		display: flex;
+		flex-direction: column;
+		height: 75px;
+		width: 400px;
 		position: relative;
-		font-size: 1.5em;
-		color: $green;
-		top: 1px;
-	}
-
-	&__adres {
-		font-size: 1em;
-		font-weight: bold;
-		color: $green;
-	}
-
-	&__adres_relative {}
-
-	&__adres_big {
-		font-size: 18px;
+		top: 40px;
+		right: 40px;
+		text-align: right;
+		float: right;
 	}
 	@media (max-width: 910px) and (min-width: 580px) {
 		line-height: 1.8em;
-		&__kod-goroda {
-			font-size: 1.4em;
-			font-weight: bold;
-			color: $green;
-		}
-		&__number {
-			position: relative;
-			font-size: 1.9em;
-			color: #60c48f;
-			top: 1px;
-		}
-		&__adres {
-			font-size: 1.2em;
-			font-weight: bold;
-			color: $green;
-		}
-		&__adres_big {
-			font-size: 1.2em;
-		}
-	}
-
-	@media (max-width: 250px) {
-		&__adres {
-			@include tsize(0.9em, $green, 1.2em);
-			font-weight: bold;
-		}
-
-		&__number {
-			@include tsize(1.2em, $green, 1.2em);
-			position: relative;
-			top: 1px;
-		}
-
-		&__kod-goroda {
-			@include tsize(0.9em, $green, 1.2em);
-			font-weight: bold;
-		}
 	}
 }
 
+.phone-top__adres_big{
+	font-size: 18px;
+	@media (max-width: $planshet) {
+	}
+	@media (max-width: 910px) and (min-width: 580px) {
+		font-size: 1.2em;
+	}
+	@media (max-width: 250px) {
+	}
+}
+.phone-top__adres{
+	//font-size: 1em;
+	font-size: 20px;
+	font-weight: bold;
+	color: $green;
+	//color: $blue_logo;
+	@media (max-width: $planshet) {
+		color: $green;
+		font-weight: bold;
+	}
+	@media (max-width: 910px) and (min-width: 580px) {
+		font-size: 1.2em;
+		color: $green;
+	}
+	@media (max-width: 250px) {
+		@include tsize(0.9em, $green, 1.2em);
+	}
+}
+.phone-top__adres_relative{
+	margin-top: 15px;
+	position: relative;
+	top: 4px;
+	color: $blue_logo;
+	//font-size: 2em;
+	@media (max-width: $planshet) {
+	}
+}
+.phone-top__kod-goroda{
+	position: relative;
+	font-size: 1em;
+	font-weight: bold;
+	top: 5px;
+	color: $green;
+	@media (max-width: $planshet) {
+		font-size: 25px;
+		color: $green;
+		font-weight: bold;
+	}
+	@media (max-width: 910px) and (min-width: 580px) {
+		font-size: 1.4em;
+		font-weight: bold;
+		color: $green;
+	}
+	@media (max-width: 250px) {
+		@include tsize(0.9em, $green, 1.2em);
+		font-weight: bold;
+	}
+}
+.phone-top__number{
+	position: relative;
+	font-size: 40px;
+	color: $green;
+	top: 2px;
+	@media (max-width: $planshet) {
+		position: relative;
+		color: $green;
+		top: 2px;
+	}
+	@media (max-width: 910px) and (min-width: 580px) {
+		position: relative;
+		font-size: 1.9em;
+		color: #60c48f;
+		top: 1px;
+	}
+	@media (max-width: 250px) {
+		@include tsize(1.2em, $green, 1.2em);
+		position: relative;
+		top: 1px;
+	}
+}
+
+//SLOGAN
 .slogan-box {
 	display: flex;
 	flex-direction: column;
@@ -216,15 +249,36 @@ a {
 		margin: 15px 0 0;
 	}
 }
-
-//PRICE
-.price-box {
-	margin: 30px auto;
+.slogan-box__slogan {
+	display: block;
+	font-family: nautilys;
+	@include tsize(2.5em, $green, 1.5em);
 	@media (min-width: 910px) {
-		margin: 60px auto 90px;
+		font-family: nautilys;
+		@include tsize(3em, $green, 1.5em);
+		width: 100%;
 	}
 	@media (max-width: 910px) and (min-width: 580px) {
-		margin: 30px 0;
+		font-family: nautilys;
+		@include tsize(3em, $green, 1.5em);
+	}
+	@media (max-width: 380px) {
+		font-family: nautilys;
+		@include tsize(2.0em, $green, 1.5em);
+	}
+	@media (max-width: 250px) {
+		 @include tsize(1.4em, $green, 1.2em);
+		font-family: nautilys;
+	}
+}
+//PRICE
+.price-box {
+	margin: 30px auto 0;
+	@media (min-width: 910px) {
+		margin: 60px auto 0px;
+	}
+	@media (max-width: 910px) and (min-width: 580px) {
+		margin: 30px 0 0;
 	}
 }
 
@@ -278,6 +332,7 @@ a {
 		vertical-align: middle;
 		font-weight: bold;
 	}*/
+
 /*CONTACTS*/
 .contacts-box {
 	background: $lite-green;
@@ -341,6 +396,7 @@ a {
 	background: #ccc;
 }
 
+/* FOOTER */
 .s-footer {
 	@include footer( 'footer.png');
 	display: flex;
@@ -415,48 +471,6 @@ a {
 		@include conteiner( 'menu.png');
 	}
 
-	.phone-top {
-		display: flex;
-		flex-direction: column;
-		height: 75px;
-		width: 400px;
-		position: relative;
-		top: 40px;
-		right: 40px;
-		text-align: right;
-		float: right;
-	}
-
-	.phone-top__kod-goroda {
-		position: relative;
-		font-size: 25px;
-		color: $green;
-		font-weight: bold;
-		top: 3px;
-	}
-
-	.phone-top__number {
-		position: relative;
-		font-size: 40px;
-		color: $green;
-		top: 2px;
-	}
-
-	.phone-top__adres {
-		font-size: 15px;
-		color: $green;
-		font-weight: bold;
-	}
-
-	.phone-top__adres_relative {
-		position: relative;
-		top: 4px;
-	}
-
-	.phone-top__adres_big {
-		font-size: 18px;
-	}
-
 	.contacts-box {
 		height: 400px;
 		background: $lite-green;
@@ -465,6 +479,7 @@ a {
 	.contacts-box__zagolovok {
 		@include tsize(25px, $green, 1.5em);
 		margin-left: 40px;
+		margin-bottom: 1em;
 		padding-top: 15px;
 		font-weight: bold;
 		text-align: left;
@@ -501,10 +516,7 @@ a {
 		color: #fff;
 	}
 }
-@media screen and (max-width: 910px) and (min-width: 580px) {
-	.s-conteiner {
-	}
-}
+
 /*forms*/
 .form-box {
 	display: block;
@@ -623,28 +635,7 @@ a {
 	color: $lite-blue2;
 }
 
-.slogan-box__slogan {
-	display: block;
-	font-family: nautilys;
-	@include tsize(2.5em, $green, 1.5em);
-	@media (min-width: 910px) {
-		font-family: nautilys;
-		@include tsize(3em, $green, 1.5em);
-		width: 100%;
-	}
-	@media (max-width: 910px) and (min-width: 580px) {
-		font-family: nautilys;
-		@include tsize(3em, $green, 1.5em);
-	}
-	@media (max-width: 380px) {
-		font-family: nautilys;
-		@include tsize(2.0em, $green, 1.5em);
-	}
-	@media (max-width: 250px) {
-		 @include tsize(1.4em, $green, 1.2em);
-		font-family: nautilys;
-	}
-}
+
 .is-visible{
 	opacity: 1;
 }
